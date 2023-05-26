@@ -7,9 +7,10 @@ function encriptar(){
     var txtCifrado = txtCifrado.replace(/u/igm,"ufat")
 
     document.getElementById("imgDer").style.display = "none";
-    document.getElementById("textResultado").style.display = "none";
-    document.getElementById("textStatus").innerHTML = txtCifrado;
+    document.getElementById("textStatus").style.display = "none";
     document.getElementById("copiar").style.display = "show";
+    document.getElementById("textResultado").innerHTML = txtCifrado;
+    document.getElementById("text-input").innerHTML = " ";
     document.getElementById("copiar").style.display = "inherit";
 }
 function desencriptar(){
@@ -21,9 +22,10 @@ function desencriptar(){
     var txtCifrado = txtCifrado.replace(/ufat/igm,"u")
 
     document.getElementById("imgDer").style.display = "none";
-    document.getElementById("textResultado").style.display = "none";
-    document.getElementById("textStatus").innerHTML = txtCifrado;
+    document.getElementById("textStatus").style.display = "none";
     document.getElementById("copiar").style.display = "show";
+    document.getElementById("textResultado").innerHTML = txtCifrado;
+    document.getElementById("text-input").innerHTML = " ";
     document.getElementById("copiar").style.display = "inherit";
 }
 function copy(){
