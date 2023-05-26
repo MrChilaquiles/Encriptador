@@ -1,27 +1,42 @@
 body{
     font-family: 'Noto Sans', sans-serif;
-    margin: 0px;
+    margin: auto;
     width: 960px;
     height: 650px;
     padding: 5px;
     background: #f3f5fc;
 }
+h1{
+    font-size: 2em;
+    font-weight: bold;
+    display: block;
+}
 .logo{
     width: 100%;
     float: left;
 }
+.logoImg{
+    margin-top: 1%;
+    float: inherit;
+    margin-left: 15%;
+}
+.titulo{
+    float: left;
+    margin-left: 15%;
+}
 .panelIzq{
     float: left;
     width: 70%;
-    height: 70%;
+    height: 50%;
     border-radius: 24px;
 }
 .panelDer{
     float: right;
     width: 30%;
-    height: auto;
+    height: 80%;
+    text-align: center;
     border-radius: 24px;
-    background: white;
+    background: #F3F5FC;
 }
 P{
     margin: 1em 0 1em 2em;
@@ -37,11 +52,12 @@ P{
     margin-left: 10%;
     margin-top: 10%;
     width: 80%;
-    height: 80%;
+    height: 60%;
     font-size: 20px;
     border: none;
     outline: none;
     background: #f3f5fc;
+    color: #0A3871;
 }
 #imgDer{
     margin-left: 2%;
@@ -56,9 +72,11 @@ P{
 #textResultado{
     float: left;
     margin-left: 10%;
-    color: black;
+    margin-top: 5%;
+    color: #0A3871;
     width: 80%;
     height: 60%;
+    background: #F3F5FC;
     border: none;
     outline: none;
     font-size: 15px;
