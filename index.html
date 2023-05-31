@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Encriptador</title>
         <link rel="icon" href="recursos/logo.png">
         <link rel="stylesheet" href="styles/reset.css">
@@ -19,17 +19,17 @@
         <main>
             <section class="panelIzq">
                 <textarea type="text" class="text-input" id="text-input" placeholder="Ingresa el texto aqui"></textarea>
+                <div class="botones">
+                    <p>* Solo minusculas y sin acentos</p>
+                    <button class="btnEncriptar" type="button" id="btnEncriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="btnDesencriptar" type="button" id="btnDesencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
             </section>
             <section class="panelDer">
                 <img src="recursos/img_der.png" alt="Imagen de apoyo" id="imgDer">
                 <h1 id="textStatus">Ningun mensaje fue encontrado</h1>
                 <textarea id="textResultado" cols="80" rows="10">Ingresa el texto que deseas encriptar o desencriptar</textarea>
                 <button id="copiar" type="button" onclick="copy()">Copiar</button>
-            </section>
-            <section class="botones">
-                <p>Solo minusculas y sin acentos</p>
-                <button type="button" id="btnEncriptar" onclick="encriptar()">Encriptar</button>
-                <button type="button" id="btnDesencriptar" onclick="desencriptar()">Desencriptar</button>
             </section>
         </main>
         <footer>
