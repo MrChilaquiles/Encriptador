@@ -1,19 +1,17 @@
 body{
     font-family: 'Noto Sans', sans-serif;
     margin: auto;
-    width: 960px;
-    height: 650px;
     padding: 5px;
     background: #f3f5fc;
 }
 h1{
     font-size: 2em;
     font-weight: bold;
-    display: block;
 }
 .logo{
     width: 100%;
     float: left;
+    margin: 2em;
 }
 .logoImg{
     margin-top: 1%;
@@ -33,7 +31,7 @@ h1{
 .panelDer{
     float: right;
     width: 30%;
-    height: 80%;
+    height: auto;
     text-align: center;
     border-radius: 24px;
     background: #fff;
@@ -81,7 +79,7 @@ P{
     outline: none;
     font-size: 15px;
 }
-#btnEncriptar{
+.btnEncriptar{
     padding: 24px;
     width: 30%;
     height: 60%;
@@ -89,7 +87,7 @@ P{
     margin-left: 15%;
     background: #0a3871;
 }
-#btnDesencriptar{
+.btnDesencriptar{
     padding: 24px;
     width: 30%;
     height: 60%;
@@ -106,4 +104,65 @@ P{
     background: #d8dfe8;
     border-radius: 24px;
     display: none;
+}
+/*Haciendo la pagina Responsive*/
+@media screen and (min-width:1200px) {
+    h1{
+        display: block;
+    }
+}
+@media screen and (max-width:480px) {
+    header{
+        display: block;
+        width: 100%;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float: none;
+        margin: 0;
+    }
+    .logo img{
+        margin-bottom: 24px;
+        margin-left: 0;
+        float: none;
+    }
+    .titulo{
+        float: none;
+        margin-left: 0;
+        text-align: center;
+    }
+    main{
+        align-items: center;
+    }
+    .panelIzq{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .panelIzq textarea{
+        margin-left: 0;
+        float: none;
+        width: 95%;
+    }
+    .panelDer{
+        width: 100%;
+        text-align: center;
+    }
+    .panelDer textarea{
+        text-align: center;
+    }
+    .botones{
+        width: 100%;
+        float: none;
+        height: auto;
+        text-align: center;
+    }
+    .botones button{
+        height: auto;
+        margin-left: 0;
+        padding: 15px;
+    }
 }
